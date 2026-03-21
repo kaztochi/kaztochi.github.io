@@ -1,30 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>プライバシーポリシー</title>
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apps by Kazuto Tochimori</title>
+  <meta name="description" content="公開中アプリのサポートページとプライバシーポリシーへの導線をまとめたページです。">
+  <style>
+    :root{
+      --bg:#f6f8fc;
+      --card:#ffffff;
+      --text:#111827;
+      --sub:#6b7280;
+      --line:#e5e7eb;
+      --brand:#2563eb;
+      --brand-2:#1e3a8a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.10), transparent 28%),
+        radial-gradient(circle at top right, rgba(59,130,246,.08), transparent 22%),
+        linear-gradient(180deg, #eef4ff 0%, var(--bg) 320px);
+      min-height:100vh;
+    }
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:48px 20px 72px;
+    }
+    .hero{
+      background:rgba(255,255,255,.88);
+      backdrop-filter: blur(10px);
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:36px 30px;
+      box-shadow:0 18px 50px rgba(37,99,235,.10);
+    }
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 12px;
+      border-radius:999px;
+      background:#dbeafe;
+      color:#1d4ed8;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.02em;
+    }
+    h1{
+      margin:0;
+      font-size:clamp(34px, 6vw, 56px);
+      line-height:1.05;
+    }
+    .lead{
+      margin:14px 0 0;
+      color:var(--sub);
+      font-size:18px;
+      max-width:760px;
+      line-height:1.8;
+    }
+    .section-title{
+      margin:34px 0 14px;
+      font-size:14px;
+      font-weight:700;
+      color:var(--sub);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      gap:20px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:22px;
+      box-shadow:0 12px 28px rgba(17,24,39,.05);
+    }
+    .app-head{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:16px;
+    }
+    .icon{
+      width:64px;
+      height:64px;
+      border-radius:18px;
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:24px;
+      font-weight:800;
+      box-shadow:0 10px 22px rgba(37,99,235,.22);
+      flex:0 0 auto;
+    }
+    .app-title{
+      margin:0;
+      font-size:24px;
+    }
+    .app-sub{
+      margin:4px 0 0;
+      color:var(--sub);
+      font-size:14px;
+      line-height:1.6;
+    }
+    .links{
+      display:grid;
+      gap:12px;
+      margin-top:16px;
+    }
+    .link{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 16px;
+      border-radius:16px;
+      background:#f8fbff;
+      border:1px solid #dbeafe;
+      color:#1d4ed8;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .link span:last-child{
+      opacity:.7;
+      font-weight:600;
+    }
+    .link:hover{
+      background:#eff6ff;
+    }
+    .empty{
+      border:1px dashed #cbd5e1;
+      background:rgba(255,255,255,.6);
+    }
+    .empty p{
+      color:var(--sub);
+      margin:8px 0 0;
+      line-height:1.7;
+    }
+    footer{
+      margin-top:32px;
+      text-align:center;
+      color:var(--sub);
+      font-size:14px;
+    }
+    code{
+      background:#eff6ff;
+      color:#1d4ed8;
+      padding:2px 6px;
+      border-radius:8px;
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    }
+  </style>
 </head>
 <body>
-<div id="outer">
-<header><div id="header-container"><div id="head-inner"><h1>プライバシーポリシー</h1>
-</header>
-<div id="content-wrapper">
-<main>
-<div id="inner">
-<p>　ittoが提供するアプリ(以下本アプリ)は、</p>
-<p>広告配信のためにGoogle Admobを使用している場合がございます。</p>
-<p>広告配信のために広告IDを取得しますが、個人を特定するためなどには使用いたしません。</p>
-<p>　また、お問合せのメールをいただいた際の情報は、以下を除き第三者に開示することはございません。</p>
-<ul>
-  <li>本アプリご利用者の同意がある場合</li>
-  <li>法令に基づき開示することが必要である場合</li>
-</ul>
-</div>
-</main>
-<footer>© 2025 itto</footer>
-</div></body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Apps</div>
+      <h1>アプリごとのサポート情報</h1>
+      <p class="lead">
+        各アプリのサポートページとプライバシーポリシーへのリンクをまとめています。
+      </p>
+    </section>
+
+    <div class="section-title">Published Apps</div>
+    <section class="grid">
+      <article class="card">
+        <div class="app-head">
+          <img src="./wippee/icon.png" alt="Wippee icon" class="icon">
+          <div>
+            <h2 class="app-title">Wippee</h2>
+            <p class="app-sub">ホーム画面のような操作感でタスクを整理する、ミニマルな WIP ボードアプリ。</p>
+          </div>
+        </div>
+        <div class="links">
+          <a class="link" href="./wippee/support.html"><span>サポートページ</span><span>→</span></a>
+          <a class="link" href="./wippee/privacy.html"><span>プライバシーポリシー</span><span>→</span></a>
+          <a class="link" href="./wippee/terms.html"><span>利用規約</span><span>→</span></a>
+        </div>
+      </article>
+
+      <article class="card empty">
+        <div class="app-head">
+          <div class="icon" style="background:linear-gradient(135deg,#64748b,#334155)">+</div>
+          <div>
+            <h2 class="app-title">Next App</h2>
+            <p class="app-sub">新しいアプリは今後ここに追加されます。</p>
+          </div>
+        </div>
+        <p>
+          追加されたアプリのサポート情報やプライバシーポリシーは、このページから確認できます。
+        </p>
+      </article>
+    </section>
+
+    <footer>© 2026 Kazuto Tochimori. All rights reserved.</footer>
+  </main>
+</body>
 </html>
