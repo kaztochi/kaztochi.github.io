@@ -74,6 +74,7 @@
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
       gap:20px;
+      align-items:stretch;
     }
     .card{
       background:var(--card);
@@ -81,17 +82,23 @@
       border-radius:24px;
       padding:22px;
       box-shadow:0 12px 28px rgba(17,24,39,.05);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      height:100%;
     }
     .app-head{
       display:flex;
-      align-items:center;
+      align-items:flex-start;
       gap:16px;
       margin-bottom:16px;
+      min-height:80px;
     }
     .icon{
       width:64px;
       height:64px;
       border-radius:18px;
+      object-fit:cover;
       background:linear-gradient(135deg, var(--brand), var(--brand-2));
       color:#fff;
       display:flex;
@@ -112,6 +119,9 @@
       font-size:14px;
       line-height:1.6;
     }
+    .app-copy{
+      padding-top:2px;
+    }
     .links{
       display:grid;
       gap:12px;
@@ -128,6 +138,7 @@
       color:#1d4ed8;
       text-decoration:none;
       font-weight:700;
+      height:48px;
     }
     .link span:last-child{
       opacity:.7;
@@ -175,7 +186,7 @@
       <article class="card">
         <div class="app-head">
           <img src="./wippee/icon.png" alt="Wippee icon" class="icon">
-          <div>
+          <div class="app-copy">
             <h2 class="app-title">Wippee</h2>
             <p class="app-sub">ホーム画面のような操作感でタスクを整理する、ミニマルな WIP ボードアプリ。</p>
           </div>
@@ -187,10 +198,26 @@
         </div>
       </article>
 
+
+      <article class="card">
+        <div class="app-head">
+          <img src="./muscle-calendar/icon.png" alt="筋トレ記録カレンダーアプリ icon" class="icon">
+          <div class="app-copy">
+            <h2 class="app-title">筋トレ記録カレンダーアプリ</h2>
+            <p class="app-sub">トレーニング記録、体重記録、カレンダー表示、グラフ表示で日々の筋トレを振り返るアプリ。</p>
+          </div>
+        </div>
+        <div class="links">
+          <a class="link" href="./muscle-calendar/support.html"><span>サポートページ</span><span>→</span></a>
+          <a class="link" href="./muscle-calendar/privacy.html"><span>プライバシーポリシー</span><span>→</span></a>
+          <a class="link" href="./muscle-calendar/terms.html"><span>利用規約</span><span>→</span></a>
+        </div>
+      </article>
+
       <article class="card empty">
         <div class="app-head">
           <div class="icon" style="background:linear-gradient(135deg,#64748b,#334155)">+</div>
-          <div>
+          <div class="app-copy">
             <h2 class="app-title">Next App</h2>
             <p class="app-sub">新しいアプリは今後ここに追加されます。</p>
           </div>
